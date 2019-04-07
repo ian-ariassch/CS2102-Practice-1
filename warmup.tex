@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Analysis and Design of Algorithms}
+\date{April 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Warm Up}
+The running time of a regular merge sort is 2T(\( \frac{n}{2} \)) + n. We have 2T(\( \frac{n}{2} \)) because
+we have 2 halves and each one takes T(\( \frac{n}{2} \)) to sort. Then, the last step of the merge sort algorithm is merging the two arrays together, which takes n time. Finally, we have that the running time is $\Theta$(nLogn) 
+\newline
+\newline
+If we want to know the running time of the three-way merge sort, instead of splitting the array in half we would split into 3 pieces. That said, we get that the running time for these 3 sub-arrays to sort would be 3T(\( \frac{n}{3} \)). Adding the running time of the merge between these sub-arrays, the final equation would be 3T(\( \frac{n}{3} \)) + $\Theta$(n). By solving this, we get that the running time of the three-way merge sort is $\Theta(n{\log_3 n})$
+\end{document}
